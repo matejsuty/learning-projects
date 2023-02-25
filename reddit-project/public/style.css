@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: "My Font Name";
+    height: 100vh;
+    background-color: #373c3f;
+}
+
+@font-face {
+    font-family: "My Font Name";
+    src: url("assets/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        display: block;
+    }
+}
+
+.container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, minmax(100px, auto));
+    padding: 0px 200px;
+}
+
+.nav {
+    background-image: url("assets/Space-background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border-bottom: #f5f5f5 solid 38px;
+}
+
+.content {
+    grid-column: 1 / 7;
+    grid-row: 2 / 6;
+    gap: 5px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax(10px, auto));
+    margin-bottom: 30px;
+}
+
+.nav p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 500%;
+    letter-spacing: 40px;
+}
+
+main {
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    gap: 5px;
+}
+
+aside {
+    grid-column: 4 / 5;
+    grid-row: 1 / 5;
+}
+
+.submit a {
+    text-decoration: none;
+    color: white;
+}
+
+.submit {
+    background-color: #4aa3df;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 2px;
+    border: 2px solid #f5f5f5;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.about {
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    border-radius: 4px;
+}
+
+.about-form {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+}
+
+.about h2, .about-form h2 {
+    font-weight: bolder;
+    font-size: medium;
+    letter-spacing: 1px;
+    background-color: #373c3f;
+    color: white;
+    padding: 0px 20px;
+    margin: 0;
+    text-align: center;
+    line-height: 70px;
+}
+
+.about p {
+    padding: 0 20px;
+}
+
+form {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 2px solid #f5f5f5;
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: #4aa3df;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin: 10px;
+    width: 150px;
+}
+
+label {
+    font-weight: bolder;
+    font-size: large;
+    padding: 5px;
+    margin: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+.wrapper {
+    border: 1px solid #373c3f;
+}
+
+.reddit-post {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, minmax(5px, auto));
+    border-radius: 4px;
+    border: 2px solid #f5f5f5;
+}
+
+.upvoter {
+    cursor: pointer;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.score {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.downvoter {
+    cursor: pointer;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.post-title {
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.upload-time {
+    grid-column: 2 / 7;
+    grid-row: 2 / 3;
+}
+
+.delete-post {
+    cursor: pointer;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: small;
+}
+
+.edit-post {
+    cursor: pointer;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    font-size: small;
+}

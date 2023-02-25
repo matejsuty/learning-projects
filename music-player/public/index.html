@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="left">
+
+            <div class="fox-img"><img src="assets/foxplayer.png" alt="fox-picture"></div>
+            <div class="album-cover"><img src="assets/music-placeholder.png" alt="album-cover"></div>
+            <div class="playlist-label"><p>Playlist</p></div>
+            <div class="plus"><p>+</p></div>
+            <div class="playlists">
+                <p>All tracks</p>
+                <p>Favorites</p>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <audio src="assets/Organoid_-_09_-_Purple_Drift.mp3"></audio>
+
+        </div>
+
+        <div class="control-panel">
+            <img class="rewind" src="assets/rewind.svg" onclick="prevTrack()" alt="rewind">
+            <img class="pause" src="assets/pause.svg" onclick="playpauseTrack()" alt="pause">
+            <img class="forward" src="assets/forward.svg" onclick="nextTrack()" alt="forward">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+            <img class="shuffle" src="assets/shuffle.svg" alt="shuffle">
+            <img class="volume" src="assets/volume.svg" alt="volume">
+            <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+
+            
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

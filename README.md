@@ -1,2 +1,2 @@
 # learning-projects
-These are some of my projects.
+These are small projects that I did during my studies.
